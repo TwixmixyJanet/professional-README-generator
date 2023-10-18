@@ -1,3 +1,8 @@
+console.log(`
+Welcome to Janet's professional README generator! 
+Follow the prompts to create your very own README markdown file!
+`);
+
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
@@ -11,3 +16,4 @@ function init() {}
 
 // Function call to initialize app
 init();
+
