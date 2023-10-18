@@ -13,23 +13,55 @@ const questions = [
             /* Pass your questions in here */
             {
                 type: 'input',
-                name: 'input_type',
-                message: 'What is your name?',
-                default: 'I am no one'
+                name: 'fullName',
+                message: 'What is your full name?',
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message: 'What is the title of your project?',
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'What is a comprehensive description of your project?',
+            },
+            {
+                type: 'input',
+                name: 'installation',
+                message: 'What are the installation instructions for your project?',
+            },
+            {
+                type: 'input',
+                name: 'usage',
+                message: 'How is this project meant to be used?',
+            },
+            {
+                type: 'input',
+                name: 'contribution',
+                message: 'What are the contribution guidelines?',
+            },
+            {
+                type: 'input',
+                name: 'test',
+                message: 'What are the testing procedures?',
             },
             {
                 type: 'list',
-                name: 'list question',
-                message: 'What programming language do you like?',
-                choices: ['JavaScript', "C++", "Python"],
-                default: 'JavaScript'
+                name: 'license',
+                message: 'Choose a license',
+                choices: ["GNU", "MIT", "The Unlicense"],
+                default: "MIT"
             },
             {
-                type: 'checkbox',
-                name: 'checkbox',
-                message: 'How many programming languages do you know?',
-                choices: ['JavaScript', "C++", "Python"],
-                default: 'JavaScript'
+                type: 'input',
+                name: 'github',
+                message: 'What is your github handle?',
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'What is your email?',
             }
         ])
         .then((answers) => {
