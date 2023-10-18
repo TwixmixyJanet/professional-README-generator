@@ -1,10 +1,11 @@
 console.log(`
-Welcome to Janet's professional README generator! 
-Follow the prompts to create your very own README markdown file!
+~~~~~~~~~~ Welcome to Janet's professional README generator! ~~~~~~~~~~
+~~~ Follow the prompts to create your very own README markdown file! ~~~
 `);
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -161,14 +162,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+// Need to make a new readme file in a separate folder or different name.
+// Include success message and direct user to where their file can be found or what it's called.
 }
 
 // TODO: Create a function to initialize app
 function init() {
-
+// Initialize the questions??
 }
 
 // Function call to initialize app
 init();
-
+// then what?
+// anything else?
+// error catching?
