@@ -21,12 +21,37 @@ function generateMarkdown(data) {
   // need to spell out the details of the README layout below.
   return `# ${data.title}
 
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Credits](#credits)
+
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributing
+  ${data.contribution}
+
+  ## Tests
+  ${data.test}
+
+  ## License
   ${renderLicenseBadge(data.license)}
 
-  ## Table of Contents
-  *
-
-  
+  ## Credits
+  ${data.fullName}
+  ${data.github}
+  ${data.email}
 `;
 }
 
