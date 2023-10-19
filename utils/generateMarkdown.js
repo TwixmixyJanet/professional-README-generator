@@ -31,10 +31,6 @@ function renderLicenseSection(license) {
   // license section text
   if (license) {
     return "## License \n" + renderLicenseBadge(license) + " License Copyright (c) 2023.";
-    // return ## License
-    // ${renderLicenseBadge(license)}
-
-    // [${license}](${renderLicenseLink(license)}) License Copyright (c) 2023.
   }
 
 
