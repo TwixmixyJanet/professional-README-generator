@@ -17,7 +17,7 @@ function renderLicenseLink(license) {
   if (license === 'MIT') {
     return `https://lbesson.mit-license.org/`
   }
-  if (license === 'The Unlicense') {
+  if (license === 'Unlicense') {
     return `https://unlicense.org/`
   }
   if (license === 'AFL-3.0') {

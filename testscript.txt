@@ -1,0 +1,20 @@
+NAME:
+Janet Webster
+
+TITLE:
+Professional README Generator
+
+DESCRIPTION:
+This application acts as a wizard to write a professional README for your project.
+
+INSTALLATION:
+* Recommended Requirements: Node.JS, CLI, VSCode * Clone the repo to your device * Initiate NPM * Install inquirer 
+
+USAGE:
+* Open Integrated Terminal (CLI) * type "node index.js" * Follow the question prompts until complete * Retrieve file from 'dist' folder
+
+CONTRIBUTION:
+This application is relatively basic. Please feel free to fork, clone or otherwise contribute to the code.
+
+TESTING:
+If you would like to see how the application works, simply type "test" in all questions you are able, see the 'dist' folder for the results. When you run the program again it will overwrite your file as needed.

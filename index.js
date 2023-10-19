@@ -108,7 +108,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a license",
-        choices: ["GPL", "MIT", "The Unlicense", "AFL-3.0"],
+        choices: ["GPL", "MIT", "Unlicense", "AFL-3.0"],
         default: "MIT",
         validate: (licenseInput) => {
           if (licenseInput) {
