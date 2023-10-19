@@ -24,12 +24,10 @@
   ## Tests
   test
 
-  ## Licenses
-    undefined
-
-    [MIT](https://lbesson.mit-license.org/) License Copyright (c) 2023.
+  ## License 
+[![MIT license](https://img.shields.io/badge/License-MIT-purple.svg)](https://lbesson.mit-license.org/) License Copyright (c) 2023.
 
   ## Credits
-  test
-  test
-  test
+  ### test<br />
+  - [GitHub Profile](https://github.com/test/)<br />
+  - [Email](mailto:test)

@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   // need to figure out how to generate the badge image thing
   if (license) {
-
+    return "[![" + license +" license](https://img.shields.io/badge/License-" + license + "-purple.svg)](" + renderLicenseLink(license) + ")";
   }
 }
 
@@ -30,10 +30,11 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   // license section text
   if (license) {
-    return `## Licenses
-    ${renderLicenseBadge(license)}
+    return "## License \n" + renderLicenseBadge(license) + " License Copyright (c) 2023.";
+    // return ## License
+    // ${renderLicenseBadge(license)}
 
-    [${license}](${renderLicenseLink(license)}) License Copyright (c) 2023.`
+    // [${license}](${renderLicenseLink(license)}) License Copyright (c) 2023.
   }
 
 
@@ -71,9 +72,9 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Credits
-  ###${data.fullName}<br />
-  [GitHub Profile](https://github.com/${data.github}/}<br />
-  ${data.email}
+  ### ${data.fullName}<br />
+  - [GitHub Profile](https://github.com/${data.github}/)<br />
+  - [Email](mailto:${data.email})
 `;
 }
 
