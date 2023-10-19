@@ -179,7 +179,7 @@ init()
   return generateMarkdown(userInput);
 })
 .then(readmeInfo => {
-  return writeToFile(readmeInfo);
+  return writeToFile(questions.title, readmeInfo);
 })
 .catch(err => {
   console.log(err);
