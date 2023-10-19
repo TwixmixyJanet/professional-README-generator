@@ -108,7 +108,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a license",
-        choices: ["GNU", "MIT", "The Unlicense"],
+        choices: ["GPL", "MIT", "The Unlicense", "AFL-3.0"],
         default: "MIT",
         validate: (licenseInput) => {
           if (licenseInput) {
@@ -158,7 +158,7 @@ function writeToFile(fileName, data) {
       }
       resolve({
         ok: true,
-        message: console.log(`Success! Your new README ${fileName} is ready in the "dist" folder.`)
+        message: console.log(`Success! Your new README is ready in the "dist" folder.`)
       })
     })
 
