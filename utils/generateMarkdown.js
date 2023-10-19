@@ -2,12 +2,14 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   // need to figure out how to generate the badge image thing
+  
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   // need to determine which licenses to option and link to them??
+
 }
 
 // TODO: Create a function that returns the license section of README

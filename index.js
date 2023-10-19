@@ -1,16 +1,15 @@
+// TODO: Include packages needed for this application
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
+
 console.log(`
 ~~~~~~~~~~ Welcome to Janet's professional README generator! ~~~~~~~~~~
 ~~~ Follow the prompts to create your very own README markdown file! ~~~
 `);
 
-// TODO: Include packages needed for this application
-const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown.js");
-
 // TODO: Create an array of questions for user input
 const questions = [
-  inquirer
-    .prompt([
       /* Pass your questions in here */
       {
         type: "input",
@@ -145,40 +144,25 @@ const questions = [
             return false;
           }
         },
-      },
-    ])
-    .then((answers) => {
-      // Use user feedback for... whatever!!
-      console.log("Answers: ", answers);
-    })
-    // .prompt([
-    //     {
-    //         type: "list",
-    //         name: "yourAnswers",
-    //         message: "Do you approve your answers?",
-    //         choices: ["YES", "NO"]
-    //       },
-    // ])
-    // .then((yourAnswers) => {
-    //     if (yourAnswers === "YES") {
-    //         // do something??
-    //     } else {
-    //         // restart questions??
-    //     }
-    // })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-        console.log(`Prompt couldn't be rendered in the current environment`);
-      } else {
-        // Something else went wrong
-        console.log(`Something else went wrong`);
       }
-    }),
-];
+    ]
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./dist/README.md', data, err => {
+      if (err) {
+        reject (err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: console.log(`Success! Your new README ${fileName} is ready in the "dist" folder.`)
+      })
+    })
+
+  })
   // Need to make a new readme file in a separate folder or different name.
   // Include success message and direct user to where their file can be found or what it's called.
 }
@@ -186,11 +170,20 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   // Initialize the questions??
-    return inquirer;
+    return inquirer.prompt(questions);
 }
 
 // Function call to initialize app
-init();
+init()
+.then(userInput => {
+  return generateMarkdown(userInput);
+})
+.then(readmeInfo => {
+  return writeToFile(readmeInfo);
+})
+.catch(err => {
+  console.log(err);
+})
 // then what?
 // anything else?
 // error catching?
