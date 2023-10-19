@@ -32,7 +32,8 @@ function renderLicenseSection(license) {
   if (license) {
     return `## Licenses
     ${renderLicenseBadge(license)}
-    ![${data.license}](${renderLicenseLink(license)}) License Copyright (c) 2023 ${data.fullName}.`
+
+    [${license}](${renderLicenseLink(license)}) License Copyright (c) 2023.`
   }
 
 
@@ -67,13 +68,11 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
 
-  ## License
-  ${data.license}
   ${renderLicenseSection(data.license)}
 
   ## Credits
-  ${data.fullName}
-  ${data.github}
+  ###${data.fullName}<br />
+  [GitHub Profile](https://github.com/${data.github}/}<br />
   ${data.email}
 `;
 }

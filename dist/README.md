@@ -1,4 +1,4 @@
-# Test
+# test
 
   ## Table of Contents
   * [Description](#description)
@@ -10,24 +10,26 @@
   * [Credits](#credits)
 
   ## Description
-  descrip
+  test
 
   ## Installation
-  isntall
+  test
 
   ## Usage
-  use
+  test
 
   ## Contributing
-  guide
+  test
 
   ## Tests
   test
 
-  ## License
-  undefined
+  ## Licenses
+    undefined
+
+    [MIT](https://lbesson.mit-license.org/) License Copyright (c) 2023.
 
   ## Credits
-  Janet
-  github
-  email
+  test
+  test
+  test
