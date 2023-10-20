@@ -1,12 +1,13 @@
 # Janet's Professional README Generator
 
-### [View Project Video Here](https://linktovideo "Janet's Professional README Generator")<br />
+### [View Project Video Here](https://drive.google.com/file/d/1Od5RjhkV9jCNbGp2n_SjrR4qz6pov_Dt/view?usp=sharing "Janet's Professional README Generator")<br />
 ![image of Janet's Professional README Generator](assets/img/projectimage.png "image of Janet's Professional README Generator")
 | Technology Used    | Resource URL |
 | --------  | ------- |
 | NodeJS      | https://nodejs.org/en |
 | Inquirer      | https://www.npmjs.com/package/inquirer |
 | FS      | https://nodejs.org/api/fs.html |
+| Screencastify | https://www.screencastify.com/ |
 | JavaScript | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
 | Git       | https://git-scm.com/ |
 | GitHub     | https://github.com/ |
@@ -22,11 +23,22 @@
 * [License](#license)
 
 ## Description:
-Description<br />
+This application acts as a wizard to write a professional README for your project.<br />
 <br />
 How to use this app:
 
-* Add steps here + link to video
+* Recommended Requirements: 
+  * Node.JS
+  * CLI
+  * VSCode 
+* Installation:
+  * Clone the repo to your device 
+  * Initiate NPM 
+  * Install inquirer 
+* Open Integrated Terminal (CLI) 
+* type "node index.js" 
+* Follow the question prompts until complete 
+* Retrieve file from 'dist' folder
 
 #### User Story
 - AS A developer
@@ -80,13 +92,14 @@ Description
 1. Create a new repository on GitHub, to store this project.
 2. Clone the repository to your computer.
 3. Copy files to your own repository.
-4. Make changes to the code.
-5. Commit the changes to the local repo.
-6. Push the changes to the remote repo.
+4. Follow the steps for "How to" above
+5. Make changes to the code.
+6. Commit the changes to the local repo.
+7. Push the changes to the remote repo.
 
 ## Usage
 
-!!! UPDATE THIS: This is a weather dashboard app. If you would like to use this app follow the installation steps and curate it to your needs. If you would like to use this app to manage your weather related activities, follow the steps under the description above and click the link at the top of this page.
+This is a professional README generator app. If you would like to use this app follow the installation steps and curate it to your needs. If you would like to use this app to create your own README files, follow the steps under the description above and click the link at the top of this page.
 
 ## License
 
