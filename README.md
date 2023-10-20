@@ -25,7 +25,8 @@
 ## Description:
 This application acts as a wizard to write a professional README for your project.<br />
 <br />
-How to use this app:
+
+#### How to use this app:
 
 * Recommended Requirements: 
   * Node.JS
@@ -45,7 +46,7 @@ How to use this app:
 - I WANT a README generator
 - SO THAT I can quickly create a professional README for a new project
 
-### Acceptance Criteria
+#### Acceptance Criteria
 - GIVEN a command-line application that accepts user input
 - WHEN I am prompted for information about my application repository
 - THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -64,28 +65,31 @@ How to use this app:
 
 ### Lessons Learned
 
-#### 1. TBD
-Description
+#### 1. Inquirer
+Inquirer is an NPM. It's an embeddable and easy to use command line interfact for Node.JS. For this project I used it to easily implement the ability to ask question, parse the input and validate answers.
 <br />
 ![lesson 1](assets/img/lesson1.png)
+![lesson 1](assets/img/lesson1c.png)
+![lesson 1](assets/img/lesson1b.png)
 
-#### 2. TBD
-Description
+#### 2. fs (File System)
+fs is an imported module through Node.JS. The module enables the interaction of files within the affected JavaScript files. It allows for operations like synchronous, callback, and promise-based forms. Most specifically for this I needed to use the Promise execute the resolve and reject process for writing the README.md file.
 <br />
 ![lesson 2](assets/img/lesson2.png)
+![lesson 2](assets/img/lesson2b.png)
 
-#### 3. TBD
-Description
+#### 3. Template Literals
+Personally I've loved template literals since they were introduced. This project really illustrated the need and versatility of using them to make all of the content to go in the README file.
 <br />
 ![lesson 3](assets/img/lesson3.png)
 
-#### 4. TBD
-Description
+#### 4. Module Exports
+For this project the starter code had the work occurring in two files, because of this I needed to be able to export the content created in the generateMarkdown to the index file to then write the document. The allows for the separation of JavaScript files and being able to contain one or certain actions to a specific file.
 <br />
 ![lesson 4](assets/img/lesson4.png)
 
 #### Synopsis
-Description
+Overall I enjoyed working in Node.JS and learning more about the capabilities of what I can accomplish through the TERMINAL. This project was a good exercise in see what a few of the possibilities are of working on projects on my local device.
 
 ## Installation
 
