@@ -158,7 +158,7 @@ function writeToFile(fileName, data) {
       }
       resolve({
         ok: true,
-        message: console.log(`Success! Your new README is ready in the "dist" folder.`)
+        message: console.log(`~~~ Success! Your new README is ready in the "dist" folder. ~~~`)
       })
     })
 
