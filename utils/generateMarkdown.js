@@ -1,16 +1,15 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// ~~~ LICENSE BADGE ~~~ ///
+// utilized the https://shields.io/ to create a generic text badge //
 function renderLicenseBadge(license) {
-  // need to figure out how to generate the badge image thing
   if (license) {
+    // needed to use string concatination here or else the content would display as a code block if I used back-ticks (template literals) //
     return "[![" + license +" license](https://img.shields.io/badge/License-" + license + "-purple.svg)](" + renderLicenseLink(license) + ")";
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// ~~~ LICENSE LINK ~~~ //
+// decided to keep it simple with if statements and limit the license options instead of using switch //
 function renderLicenseLink(license) {
-  // need to determine which licenses to option and link to them??
   if (license === 'GPL') {
     return `http://perso.crans.org/besson/LICENSE.html`
   }
@@ -25,10 +24,8 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// ~~~ LICENSE SECTION ~~~ //
 function renderLicenseSection(license) {
-  // license section text
   if (license) {
     return "## License \n" + renderLicenseBadge(license) + " License Copyright (c) 2023.";
   }
@@ -36,9 +33,9 @@ function renderLicenseSection(license) {
 
 }
 
-// TODO: Create a function to generate markdown for README
+// ~~~ GENERATE MARKDOWN ~~~ ///
 function generateMarkdown(data) {
-  // need to spell out the details of the README layout below.
+  // spelled out the details of the README layout below.
   return `# ${data.title}
 
   ## Table of Contents
@@ -74,4 +71,5 @@ function generateMarkdown(data) {
 `;
 }
 
+// ~~~ EXPORT GENERATE MARKDOWN ~~~ //
 module.exports = generateMarkdown;

@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// ~~~ PACKAGES ~~~ //
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
@@ -8,9 +8,9 @@ console.log(`
 ~~~ Follow the prompts to create your very own README markdown file! ~~~
 `);
 
-// TODO: Create an array of questions for user input
+// ~~~ INQUIRER QUESTIONS ~~~ //
 const questions = [
-      /* Pass your questions in here */
+      // these questions are called on from the init() function.
       {
         type: "input",
         name: "fullName",
@@ -148,7 +148,7 @@ const questions = [
     ]
 
 
-// TODO: Create a function to write README file
+// ~~~ fs WRITE file function ~~~ //
 function writeToFile(fileName, data) {
   return new Promise((resolve, reject) => {
     fs.writeFile('./dist/README.md', data, err => {
@@ -163,17 +163,15 @@ function writeToFile(fileName, data) {
     })
 
   })
-  // Need to make a new readme file in a separate folder or different name.
-  // Include success message and direct user to where their file can be found or what it's called.
 }
 
-// TODO: Create a function to initialize app
+// ~~~ init function ready to initiate questions ~~~ //
 function init() {
-  // Initialize the questions??
     return inquirer.prompt(questions);
 }
 
-// Function call to initialize app
+// ~~~ init call ~~~ //
+// after the init is called then it will return the generate markdown and then it will write it to the file. //
 init()
 .then(userInput => {
   return generateMarkdown(userInput);
@@ -184,6 +182,3 @@ init()
 .catch(err => {
   console.log(err);
 })
-// then what?
-// anything else?
-// error catching?
